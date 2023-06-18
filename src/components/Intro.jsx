@@ -15,7 +15,7 @@ function Intro() {
         <div className="flex flex-row items-center justify-center mb-10 space-x-4">
           <a href="https://github.com/daniyal0506" target="_blank">
             <img
-              className="w-6 h-6"
+              className="w-6 h-6 mt-1"
               src="./assets/github-logo.png"
               alt="github-logo"
             />
