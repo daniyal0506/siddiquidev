@@ -1,10 +1,17 @@
 export default [
   {
+    year: "June 2024",
+    title: "Associate Developer Intern",
+    duration: "2 months",
+    details:
+      "Interned as an Associate Developer at Health Care Service Corporation within the Claims team. Contributed to feature updates and bug fixes for microservices while operating under the agile methodology, successfully meeting bi-weekly sprint objectives. Conducted unit tests and system integration testing. Implemented SQL changes to improve database table lookup efficiency.",
+  },
+  {
     year: "January 2023",
     title: "Teaching Assistant - Data Structures & Algorithms",
     duration: "5 months",
     details:
-      "Served as a TA for the Data Structures & Algorithsm course at my university. I held office hours and hosted labs, helping students work through DS&A problems and assisting with any problems they faced.",
+      "Served as a TA for the Data Structures & Algorithms course at my university. I held office hours and hosted labs, helping students work through DS&A problems and assisting with any problems they faced.",
   },
   {
     year: "September 2022",
