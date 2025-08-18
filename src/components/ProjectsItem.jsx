@@ -6,34 +6,33 @@ function PortfolioItem({ title, imgUrl, stack, link, description }) {
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className="border-2 border-stone-900 dark:border-white rounded-md overflow-hidden relative group block"
+      className="block bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg transform hover:scale-[1.02] transition-all duration-300"
     >
-      <img
-        src={imgUrl}
-        alt="portfolio"
-        className="w-full object-cover cursor-pointer"
-        style={{ aspectRatio: "16/9" }}
-      />
-      <div className="p-4">
-        <h3 className="text-lg md:text-xl dark:text-white mb-2 md:mb-3 font-semibold">
+      <div className="relative">
+        <img
+          src={imgUrl}
+          alt={title}
+          className="w-full h-48 object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+      </div>
+      
+      <div className="p-6">
+        <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
           {title}
         </h3>
-        <p className="flex flex-wrap gap-2 flex-row items-center justify-start text-xs md:text-sm dark:text-white">
-          {stack.map((item) => (
+        <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">
+          {description}
+        </p>
+        <div className="flex flex-wrap gap-2">
+          {stack.map((item, index) => (
             <span
-              className="inline-block px-2 py-1 font-semibold border-2 border-stone-900 dark:border-white rounded-md"
-              key={item}
+              key={index}
+              className="px-3 py-1 text-xs font-medium bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full"
             >
               {item}
             </span>
           ))}
-        </p>
-        <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-75 text-white justify-center flex items-center opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
-          <div className="flex items-center justify-start h-full px-4 pb-4 font-roboto-mono">
-            💡
-            <br />
-            {description}
-          </div>
         </div>
       </div>
     </a>

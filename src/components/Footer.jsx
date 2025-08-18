@@ -8,7 +8,7 @@ function Footer() {
           <div className="flex flex-wrap justify-center gap-2">
             <a
               href="https://www.linkedin.com/in/daniyalsiddiq/"
-              className="bg-stone-400 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded-full"
+              className="bg-gray-600 dark:bg-gray-400 p-2 font-semibold text-white dark:text-black inline-flex items-center space-x-2 rounded-full hover:bg-gray-700 dark:hover:bg-gray-300 transition-colors duration-300"
             >
               <svg
                 className="w-5 h-5 fill-current"
@@ -24,7 +24,7 @@ function Footer() {
 
             <a
               href="https://github.com/daniyal0506"
-              className="bg-stone-400 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded-full"
+              className="bg-gray-600 dark:bg-gray-400 p-2 font-semibold text-white dark:text-black inline-flex items-center space-x-2 rounded-full hover:bg-gray-700 dark:hover:bg-gray-300 transition-colors duration-300"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +48,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <p className="text-sm mt-2  opacity-50">
+      <p className="text-sm mt-2 opacity-50 text-gray-600 dark:text-gray-400">
         &copy; {new Date().getFullYear()} Muhammad Siddiqui. All rights
         reserved.
       </p>

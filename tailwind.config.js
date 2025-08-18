@@ -1,33 +1,35 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./src/**/*.{jsx, js}"],
+  content: ["./index.html", "./src/**/*.{jsx,js}"],
   darkMode: "class",
   theme: {
     extend: {
       fontFamily: {
-        "russo-one": ["Russo One", "sans-serif"],
-        "roboto-mono": ["Roboto Mono", "monospace"],
+        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+      },
+      colors: {
+        primary: {
+          50: '#f0f9ff',
+          100: '#e0f2fe',
+          200: '#bae6fd',
+          300: '#7dd3fc',
+          400: '#38bdf8',
+          500: '#0ea5e9',
+          600: '#0284c7',
+          700: '#0369a1',
+          800: '#075985',
+          900: '#0c4a6e',
+        },
       },
       animation: {
-        typing: "typing 1.5s steps(18), blink 0.7s infinite",
-        typingSub: "typingSub 1.0s steps(7), blink 0.7s infinite",
-        typingSubExp: "typingSubExp 1.0s steps(9), blink 0.7s infinite",
+        'gradient': 'gradient 8s linear infinite',
+        'bounce': 'bounce 1s infinite',
       },
       keyframes: {
-        typing: {
-          from: { width: "0" },
-          to: { width: "18ch" },
-        },
-        typingSub: {
-          from: { width: "0" },
-          to: { width: "7ch" },
-        },
-        typingSubExp: {
-          from: { width: "0" },
-          to: { width: "9ch" },
-        },
-        blink: {
-          from: { "border-right-color": "transparent" },
-          to: { "border-right-color": "black" },
+        gradient: {
+          to: {
+            'background-position': '200% center',
+          },
         },
       },
     },
