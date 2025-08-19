@@ -3,7 +3,7 @@ export default [
     title: "GradePulse",
     imgUrl: "./assets/gradepulse.png",
     stack: ["HTML", "CSS", "JavaScript", "React", "Node.js"],
-    link: "https://gradepulse.onrender.com/",
+    link: "https://gradepulse-frontend.vercel.app/",
     description:
       "A website made using React that allow UIC students to view grade distribution for courses",
   },
